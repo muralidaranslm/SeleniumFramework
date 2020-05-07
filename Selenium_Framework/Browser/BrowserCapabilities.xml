@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ChromeBrowser>
+  <UserProfilePreferences>
+    <Data key="disable-popup-blocking" value="true"></Data>
+    <Data key="download.prompt_for_download" value="false"></Data>
+    <Data key="download.directory_upgrade" value="true"></Data>
+    <Data key="safebrowsing.enabled" value="true"></Data>
+    <Data key="credentials_enable_service" value="false"></Data>
+  </UserProfilePreferences>
+  <Arguments>
+    <Data key="test-type"></Data>
+    <Data key="start-maximized"></Data>
+    <Data key="--disable-extensions"></Data>
+    <Data key="disable-infobars"></Data>
+    <Data key="chrome.switches"></Data>
+  </Arguments>
+</ChromeBrowser>
