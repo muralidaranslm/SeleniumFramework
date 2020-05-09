@@ -12,17 +12,17 @@ namespace Selenium_Framework.Browser
 {
     public class SeleniumBrowser
     {
+        IWebDriver driver;
         public void Start(string browserType)
         {
             switch (browserType)
             {
                 case "Chrome":
-                    StartChrome("");
+                    StartChrome("www.google.com", "External\\chromedriver.exe");
                     break;
             }
-
         }
-        public void StartChrome(string url)
+        public void StartChrome(string url,string driverPath)
         {
             ChromeOptions options = new ChromeOptions();
             string path = "Browser\\BrowserCapabilities.xml";
@@ -53,9 +53,18 @@ namespace Selenium_Framework.Browser
                     options.AddArgument(key);
                 }
             }
-            IWebDriver driver = new ChromeDriver("", options, TimeSpan.FromMinutes(4));
+            driver = new ChromeDriver(driverPath, options, TimeSpan.FromMinutes(4));
             driver.Url = url;
             driver.Navigate();
+        }
+        public IWebDriver GetDriver()
+        {
+            return this.driver;
+        }
+
+        public void SetDriver(object driver)
+        {
+            this.driver = (IWebDriver)driver;
         }
 
     }

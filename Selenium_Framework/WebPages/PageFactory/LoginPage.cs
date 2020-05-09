@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Selenium_Framework.Web.PageOps
+namespace Selenium_Framework.WebPages.Pages
 {
-    public class LoginPageOps
+    public class LoginPage
     {
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Selenium_Framework.Browser;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -9,13 +10,16 @@ namespace Selenium_Framework.Driver
 {
     public class Application
     {
-        public void start()
+        public static void start()
         {
             KillProcess("chromedriver");
             KillProcess("chrome");
-         
+            SeleniumBrowser browser = new SeleniumBrowser();
+            browser.Start("Chrome");
+            browser.SetDriver(browser.GetDriver());
         }
-        private void KillProcess(string processName)
+
+        private static void KillProcess(string processName)
         {
             Process[] process = Process.GetProcessesByName(processName);
             foreach (Process pr in process)

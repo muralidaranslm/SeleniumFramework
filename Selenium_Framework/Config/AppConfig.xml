@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppConfig>
+    <AppSettings>
+        <!--Mandatory keys-->
+        <!--  Supported browsers =>1. IE 2. FF 3. Chrome 4. Safari 5. MobileChromium 6. MobileChrome 7. MobileBrowser 8. MobileSafari 9. Android 10. iOS 11. FireFox -->
+        <Data key="BrowserType" value="Chrome"></Data>
+
+        <!--  Supported Mobile browsers =>1. MobileChromium 2. MobileChrome 3. MobileBrowser 4. MobileSafari 5. Android 6. iOS 7. FireFox -->
+        <Data key="MobileBrowserType" value="MobileChrome"></Data>
+        <Data key="LogsRootPath" value="C:\InsightTestLogs"></Data>
+    </AppSettings>
+    <!--Emailing is not implemented-->
+  
+</AppConfig>
