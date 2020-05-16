@@ -58,13 +58,12 @@ namespace SeleniumBase
                     return new ChromeOptions();
             }
         }
+
         public static IWebDriver GetDriver()
         {
             return webdriver;
         }
     }
-
-
 
     public enum BrowserType
     {

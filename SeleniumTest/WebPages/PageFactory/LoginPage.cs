@@ -1,8 +1,8 @@
-﻿using SeleniumTest.WebPages.PageFactory;
+﻿using SeleniumBase;
 
 namespace SeleniumTest.WebPages.Pages
 {
-    public class LoginPage : PageBase
+    public class LoginPage : BasePage
     {
     }
 }

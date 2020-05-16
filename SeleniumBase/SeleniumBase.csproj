@@ -51,6 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\Base.cs" />
+    <Compile Include="Base\BasePage.cs" />
+    <Compile Include="Config\BrowserConfig.cs" />
+    <Compile Include="Config\Config.cs" />
     <Compile Include="Control\Implementation\SeleniumButton.cs" />
     <Compile Include="Control\Implementation\SeleniumControl.cs" />
     <Compile Include="Control\Implementation\SeleniumDropdown.cs" />

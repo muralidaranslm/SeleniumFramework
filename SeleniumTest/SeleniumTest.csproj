@@ -73,7 +73,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test\TC_login.cs" />
     <Compile Include="Test\TestBase.cs" />
-    <Compile Include="WebPages\PageFactory\PageBase.cs" />
     <Compile Include="WebPages\PageOps\LoginPageOps.cs" />
     <Compile Include="WebPages\PageFactory\LoginPage.cs" />
   </ItemGroup>
@@ -92,6 +91,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SeleniumBase\SeleniumBase.csproj">
+      <Project>{2168383a-b375-427a-bc41-a32695970ae6}</Project>
+      <Name>SeleniumBase</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
