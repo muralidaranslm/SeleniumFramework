@@ -1,19 +1,15 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Selenium_Framework.Config;
 
-namespace Selenium_Framework.Test
+namespace SeleniumTest.Test
 {
     [DeploymentItem("Config", "Config")]
     [DeploymentItem("Browser", "Browser")]
-    [DeploymentItem("External", "Dlls")]
-
+    [DeploymentItem("External", "External")]
     public class TestBase
     {
         [TestInitialize]
         public void TestInit()
         {
-            Config.Config.LoadAllConfig();
-            //TO DO logger
         }
 
         [TestCleanup]

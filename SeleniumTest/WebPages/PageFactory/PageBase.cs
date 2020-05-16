@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Selenium_Framework.WebPages.Pages
+namespace SeleniumTest.WebPages.PageFactory
 {
-    public class LoginPage
+    public class PageBase
     {
     }
 }

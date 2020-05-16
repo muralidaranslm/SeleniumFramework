@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace Selenium_Framework.Driver
+namespace SeleniumBase.Utils
 {
     public class ReadXML
     {

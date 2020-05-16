@@ -1,12 +1,11 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Selenium_Framework.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Selenium_Framework.Test
+namespace SeleniumTest.Test
 {
     [TestClass]
     public class TC_login : TestBase
@@ -14,7 +13,6 @@ namespace Selenium_Framework.Test
         [TestMethod]
         public void login()
         {
-            Application.start();
         }
     }
 }
