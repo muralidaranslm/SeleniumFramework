@@ -5,11 +5,11 @@ using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Remote;
 using System;
 
-namespace SeleniumBase.Base
+namespace SeleniumBase
 {
     public class Base
     {
-        private IWebDriver webdriver;
+        private static IWebDriver webdriver;
 
         public void Init()
         {
@@ -58,7 +58,13 @@ namespace SeleniumBase.Base
                     return new ChromeOptions();
             }
         }
+        public static IWebDriver GetDriver()
+        {
+            return webdriver;
+        }
     }
+
+
 
     public enum BrowserType
     {

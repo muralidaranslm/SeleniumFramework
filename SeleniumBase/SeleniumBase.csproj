@@ -51,6 +51,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\Base.cs" />
+    <Compile Include="Control\Implementation\SeleniumButton.cs" />
+    <Compile Include="Control\Implementation\SeleniumControl.cs" />
+    <Compile Include="Control\Implementation\SeleniumDropdown.cs" />
+    <Compile Include="Control\Implementation\SeleniumTextbox.cs" />
+    <Compile Include="Control\Interface\ISeleniumButton.cs" />
+    <Compile Include="Control\Interface\ISeleniumControl.cs" />
+    <Compile Include="Control\Interface\ISeleniumDropdown.cs" />
+    <Compile Include="Control\Interface\ISeleniumTextbox.cs" />
     <Compile Include="Utils\ReadXML.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -58,10 +66,10 @@
     <Content Include="Browser\BrowserCapabilities.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Config\AppConfig.xml">
+    <Content Include="ConfigXML\AppConfig.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Config\EnvironmentConfig.xml">
+    <Content Include="ConfigXML\EnvironmentConfig.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="External\chromedriver.exe">
@@ -93,7 +101,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Control\" />
     <Folder Include="Driver\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
